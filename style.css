@@ -14,7 +14,11 @@ body {
     font-weight: normal;
     font-family: 'Old Standard TT', sans-serif;
     font-style: italic;
-    /* font: 16px normal 'Old Standard TT'; */
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
 }
 
 a {
@@ -27,7 +31,7 @@ a:hover {
 }
 
 a:visited {
-    color: green;
+    color: rgb(19, 7, 124);
 }
 
 .avatar {
@@ -63,11 +67,6 @@ a:visited {
     }
 }
 
-.container {
-    max-width: 750px;
-    margin: auto;
-}
-
 .bg-yellow {
     background: #fff9dc
 }
@@ -90,6 +89,10 @@ a:visited {
     padding-left: 10px;
 }
 
+.contact-li li {
+    border-bottom: 1px solid #ccc;
+}
+
 .table {
     width: 100%;
 }
@@ -99,16 +102,17 @@ a:visited {
     margin-top: 20px;
 }
 
+.table td:nth-child(1) {
+    color: blue ;
+    width: 15%;
+}
+
 .table td:nth-child(2), td:nth-child(3) {
     color:darkgreen ;
 }
 
 .table tr:nth-child(even) {
-    background:burlywood ;
-}
-
-.li-bb li {
-    border-bottom: 1px solid #ccc;
+    background: #FFEFD5 ;
 }
 
 .contact h2 {
@@ -146,10 +150,12 @@ a:visited {
 }
 
 .btn {    
+    display: block;
     background: #111;
     color: #fff;
     padding: 15px 20px;
-    bottom: none;
+    margin: auto;
+    /* bottom: none; */
     font-family: inherit;
     cursor: pointer;
 }

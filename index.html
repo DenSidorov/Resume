@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="UTF-8" />
-  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Den Resume</title>
   <link href="style.css" rel="stylesheet">
 </head>
@@ -19,31 +19,31 @@
           <h1>Александрович</h1>
 
           <hr size="2" width="100%" color="red" />
-          <p>07.03.1981 г.</p>
+          <p>07.03.1981г.</p>
           <p>г. Москва</p>
         </div>
     </div>
 
-    <div class="card bg-yellow">
+    <div class="experience card bg-yellow">
       <h2>Опыт работы</h2>
       <table class="table">
         <thead>
           <tr>
-            <th>Столбик 1</th>
-            <th>Столбик 2</th>
-            <th>Столбик 3</th>
+            <th>Год</th>
+            <th>Организация</th>
+            <th>Должность/функции</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Значение 1</td>
-            <td>Значение 2</td>
-            <td>Значение 3</td>
+            <td>2018-2022</td>
+            <td>Самозанятый</td>
+            <td>Инженер-монтажник. Кондиционеры, вентиляционные системы</td>
           </tr>
           <tr>
-            <td>Значение 1</td>
-            <td>Значение 2</td>
-            <td>Значение 3</td>
+            <td>2017-2018</td>
+            <td>Инженер-монтажник</td>
+            <td>Кондиционеры, вентиляционные системы</td>
           </tr>
           <tr>
             <td>Значение 1</td>
@@ -60,7 +60,7 @@
       </table>
     </div>
 
-    <div class="card bg-green">
+    <div class="hobbi card bg-green">
 
       <div class="hobbi">
         <h2>Хобби</h2>
@@ -73,10 +73,9 @@
       </div>
     </div>
 
-    <div class="card bg-red">
-
-      <h2>Мои контакты</h2>
-      <ul class="list li-bb">
+    <div class="contact card bg-red">
+      <h2><a href="contaсts.html">Мои контакты</a></h2>
+      <ul class="list contact-li">
         <li>Tel.: +7(929)977-92-95</li>
         <li>e-mail: densidv7@yandex.ru</li>
       </ul>
@@ -84,7 +83,7 @@
     <div class="contact card bg-red">
       <h2>Связаться со мной</h2>
       
-      <form action="/">
+      <form action="/contaсts.html">
         <div class="row">
           <div class="form-group">
             <label for="name">Ваше имя:</label>
@@ -103,10 +102,12 @@
         </div>
         
         <input class="btn" type="submit" value="Отправить">
+        <input class="btn" type="reset" value="Очистить">
         
       </form>
     </div>
   </div>
-  </body>
+  <script src="app.js"></script>
+</body>
 
 </html>
