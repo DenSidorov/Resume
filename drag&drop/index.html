@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Drag & Drop | Проект 2</title>
+</head>
+
+<body>
+  <details>
+    <summary></summary>
+    <nav class="menu">
+      <a href="/">Резюме</a>
+      <a href="https://github.com/DenSidorov" target="_blank">Git</a>
+      <a href="/cards/index.html">Cards</a>
+      <a href="/drag&drop/index.html">Drag&drop</a>
+      <a href="/mini_game/index.html">Mini game</a>
+      <a href="/game/index.html">Game</a>
+    </nav>
+  </details>
+  <div>
+    <div class="row">
+      <div class="col-header start">Начать</div>
+      <div class="col-header progress">В процессе</div>
+      <div class="col-header done">Готовы</div>
+    </div>
+
+    <div class="row">
+      <div class="placeholder">
+        <div class="item" draggable="true">Перетащи меня</div>
+      </div>
+      <div class="placeholder"></div>
+      <div class="placeholder"></div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
