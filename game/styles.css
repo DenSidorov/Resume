@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Khula&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web&display=swap');
 
 * {
   box-sizing: border-box;
@@ -6,7 +6,7 @@
 
 body {
   color: #fff;
-  font-family: "Khula", sans-serif;
+  font-family: 'Istok Web', sans-serif;
   height: 100vh;
   overflow: hidden;
   margin: 0;
@@ -23,6 +23,7 @@ body {
 
 .nav a {
   color: #111;
+  font-family: 'Istok Web', sans-serif;
 }
 
 a {

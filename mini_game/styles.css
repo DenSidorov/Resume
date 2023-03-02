@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -20,12 +22,12 @@ body {
   background-color: #fff;
   display: flex;
   justify-content: space-around;
-  border-radius: 5px;
-  z-index: 100;
+  border-radius: 5px;  
 }
 
 .nav a {
   color: #000;
+  font-family: 'Istok Web', sans-serif;
 }
 .container {
   display: flex;
