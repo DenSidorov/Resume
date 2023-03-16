@@ -18,12 +18,11 @@ body {
   display: flex;
   justify-content: space-around;
   border-radius: 4px;
-
+  margin-bottom: 5px;
 }
 
 .nav a {
   color: #111;
-  font-family: 'Istok Web', sans-serif;
 }
 
 a {

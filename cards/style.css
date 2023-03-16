@@ -9,8 +9,7 @@ body {
     overflow: hidden;
     margin: 0;
     background: grey;
-    height: 100vh;
-    
+    height: 100vh;    
 }
 
 .container {
@@ -23,15 +22,15 @@ body {
 }
 
 .nav {
-  background-color: #fff;
-  display: flex;
-  justify-content: space-around;
-  border-radius: 5px;
-  z-index: 100;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 4px;
+    margin-bottom: 5px;
 }
-
+  
 .nav a {
-  color: #000;
+    color: #111;
 }
 
 .slide {
