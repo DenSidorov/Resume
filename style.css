@@ -1,141 +1,146 @@
-@import url('https://fonts.googleapis.com/css2?family=Istok+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Poppins&display=swap');
 
+:root {
+    --main-bg-color: #5DC1D9;
+    --left-bg-color: #282D30;
+}
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
-
 body {
-    background-color: #111;
-    color: #111;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    font-family: 'Play', sans-serif;
     font-size: 20px;
-    font-weight: normal;
-    font-family: 'Istok Web', sans-serif;
 }
-
-.nav {
-  background-color: #fff;
-  display: flex;
-  justify-content: space-around;
-  border-radius: 4px;
-  margin-bottom: 5px;
+img {
+    width: 170px;
+    height: 170px;
+    border: 10px solid var(--main-bg-color);
+    border-radius: 50%;
 }
-
-.nav a {
-  color: #111;
-}
-
-.container {
-    max-width: 900px;
-    margin: auto;
-}
-
-.avatar {
-    width: 150px;
-    /* margin: 15px; */
-    border-radius: 25px;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
-}
-
-.top {
-    padding-left: 20px;
-    display: flex;
-    justify-content: space-around;
-    background: rgba(255, 255, 255, 0.95);
-}
-
-.top-text {
-    margin: auto 20px;
-    /* color: #fff; */
-}
-
-.top p {
-    /* color: #86898f; */
-    margin: 15px 0;
-    /* font-style: normal; */
-    /* font-weight: bold; */
-}
-.card {
-    padding: 15px 20px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-}
-
-.card h2 {
-    text-align: center;
-    color: #111;
-}
-
-.contact h2 {
-    text-align: center;
-}
-
-.contact-li li {
-    border-bottom: 1px solid #ccc;
-}
-
-.stack {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.bg-yellow {
-    background: #fff9dc
-}
-
-.bg-green {
-    background: #e5ffe7
-}
-
-.bg-red {
-    background: #9af3ff
-}
-
-
-.list {
-    padding-left: 10px;
-}
-
-.table {
-    width: 100%;
-}
-
-.table td {
-    padding-bottom: 10px;
-    margin-top: 20px;
-}
-
-.table td:nth-child(1) {
-    width: 15%;
-}
-
-.table tr:nth-child(even) {
-    background: #FFEFD5 ;
-}
-
-.btn {    
-    display: block;
-    background: #111;
+a {
     color: #fff;
-    padding: 15px 20px;
-    margin: auto;
-    /* bottom: none; */
-    font-family: inherit;
-    cursor: pointer;
-    border-radius: 5px;
+}
+#left {
+    width: 25%;
+    background-color: var(--left-bg-color);
+    display: flex;
+    align-items: start;
+    text-align: right;
+}
+#left > .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+#left .avatar {
+    margin: 10px auto 10px auto;
+}
+#left .card {
+    align-self: self-end;
+    padding: 0.2em;
+}
+#left .card ul {
+    list-style-type: none;
+    line-height: 1.5em;
+}
+#left .header {
+    display: inline-block;
+    margin: 5px; 
+    padding: 5px;
+    background-color: var(--main-bg-color);
+    font-size: 1.3em;
+    color: #000;
+}
+#left .content {
+    padding-right: 0.8em;
+}
+#right {
+    width: 75%; 
+    background-color: white;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    text-align: left;
+}
+#right > .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+
+}
+#right .head {
+    padding-left: 30px;
+    margin-top: 20px;
+    height: 1;
+    width: 100%;
+    background-color: var(--main-bg-color);
+    font-size: 2em;
+    color: #fff;
+}
+#right .head h1:nth-child(2) {
+    font-size: 1.7em;
+}
+#right .card {
+    align-self: self-end;
+    padding: 5px;
+}
+#right .header {
+    display: inline-block;
+    margin: 5px; 
+    padding: 5px;
+    background-color: var(--main-bg-color);
+    font-size: 1.3em;
+    color: #fff;
+}
+#right .content {
+    padding-left: 1em;
+}
+#right .card h3,
+#right .card span {
+    display: inline;
 }
 
-.btn:hover {
-    opacity: 0.7;
+@media (max-width: 1000px) {
+    body {
+        font-size: 0.9em;
+    }
+    img {
+        width: 130px;
+        height: 130px;
+    }
+    #left .card {
+        padding: 0.2em;
+    }
 }
-
-
+@media (max-width: 830px) {
+    body {
+        font-size: 0.8em;
+    }
+    img {
+        width: 130px;
+        height: 130px;
+    }
+    #left .card {
+        padding: 0.2em;
+    }
+}
 @media (max-width: 700px) {
-    .top {
-        text-align: center;
-        padding: 0;
-        margin: 0;
+    body {
+        font-size: 0.7em;
+    }
+    img {
+        width: 100px;
+        height: 100px;
+    }
+    #left .card {
+        padding: 0.2em;
     }
 }
