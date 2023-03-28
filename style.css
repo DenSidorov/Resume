@@ -47,7 +47,6 @@ a {
 }
 #left .card ul {
     list-style-type: none;
-    line-height: 1.5em;
 }
 #left .header {
     display: inline-block;
@@ -142,5 +141,60 @@ a {
     }
     #left .card {
         padding: 0.2em;
+    }
+}
+@media print {
+    /* здесь будут стили для печати */
+    @page {
+        margin: 0;
+    }
+    body {
+        padding: 0;
+        margin: 0;
+        font-size: 20px;
+    }
+    #left > .container {
+        padding: 0;
+        margin: 0;
+        color: #000;
+        font-size: 20px;
+    }
+    #left .header {
+        padding: 0;
+        margin: 0;
+        font-size: 20px;
+        color: #000;
+    }
+    #left .content,
+    #left .content h3 {
+        padding-right: 10px;
+        font-size: 18px;
+    }
+    #left .content a {
+        text-decoration: none;
+        color: #000;
+    }
+    #right .head {
+        padding-left: 30px;
+        width: 100%;
+        color: #000;
+    }
+    #right .head h1,
+    #right .head h1:nth-child(2) {
+        display: inline-block;
+        font-size: 30px;
+    }
+    #right .head h5 {
+        font-size: 20px;
+    }
+    #right .header {
+        display: inline-block;
+        padding: 2px;
+        font-size: 20px;
+        color: #000;
+    }
+    #right .content {
+        padding-left: 20px;
+        font-size: 18px;
     }
 }
