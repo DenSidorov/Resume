@@ -24,6 +24,20 @@ img {
 a {
     color: #fff;
 }
+.di {
+    display: inline;
+}
+.menu {
+    display: none;
+    padding: 5px;
+    background-color: var(--left-bg-color);
+    color: #000;
+    border: 4px solid var(--main-bg-color);
+}
+li:hover .menu {
+    display: block;
+    position: absolute;
+}
 #left {
     width: 25%;
     background-color: var(--left-bg-color);
@@ -146,7 +160,7 @@ a {
 @media print {
     /* здесь будут стили для печати */
     @page {
-        margin: 0;
+        margin: 10px;
     }
     body {
         padding: 0;

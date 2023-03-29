@@ -14,12 +14,16 @@
         <div class="container">
             <div class="avatar">
                 <img src="./img/1.JPG" alt="Photo">
+                <!-- Пример встраивания изображения с Google Диска
+                    Исходный URL: https://drive.google.com/file/d /0B6wwyazyzml-OGQ3VUo0Z2thdmc/посмотреть
+                    Вам нужно скопировать идентификатор из исходного URL-адреса (символы между /d/и /view) и использовать его в этом URL-адресе:
+                    https://drive.google.com/uc?export=view&id=1BuiLhQtiGM33FvCqVUknZwXVV96FnXkO -->
             </div>
             <div class="contacts card">
                 <h2 class="header">Контакты</h2>
                 <div class="content">
                     <ul class="contact-list">
-                        <li>Tel.: +7(929)977-92-95</li>
+                        <li>+7(929)977-92-95</li>
                         <li>telegram: @densidorov</li>
                         <li>e-mail: densidv7@yandex.ru</li>
                     </ul>
@@ -41,13 +45,37 @@
                 <h2 class="header">Стек</h2>
                 <div class="content">
                     <ul class="skills-list">
-                        <li>HTML, CSS, <a href="https://github.com/DenSidorov?tab=repositories&q=&type=public&"
-                                target="_blank">Git</a></li>
-                        <li>Python, <a href="https://github.com/DenSidorov/NewsPortal_D5.git" target="_blank">Django</a>
+                        <li><a href="https://densidorov.github.io/resume-sda/" target="_blank">HTML, CSS,</a>
+                            <a href="https://github.com/DenSidorov?tab=repositories&q=&type=public&"
+                                target="_blank">Git</a>
                         </li>
-                        <li>JavaScript, TypeScript</li>
-                        <li>React, Vue</li>
-                        <li>Docker, Wedpack</li>
+                        <li class="di"><a href="#">Python</a>
+                            <ul class="menu">
+                                <li><a href="https://github.com/DenSidorov/NewsPortal_D5" target="_blank">Новостной портал</a></li>
+                                <li><a href="https://github.com/DenSidorov/TeleBot" target="_blank">Телеграмм бот</a></li>
+                                <li><a href="https://github.com/DenSidorov/Sea_Battle" target="_blank">Морской бой</a></li>
+                            </ul>, 
+                        </li>
+                        <li class="di">
+                            <a href="https://github.com/DenSidorov/NewsPortal_D5.git" target="_blank">Django</a>
+                        </li>
+                        <li></li>
+                        <li class="di"><a href="#">JavaScript</a>
+                            <ul class="menu">
+                                <li><a href="https://github.com/DenSidorov/weather_react" target="_blank">Прогноз погоды</a></li>
+                                <li><a href="https://github.com/DenSidorov/REST" target="_blank">REST API</a></li>
+                                <li><a href="https://github.com/DenSidorov/modal-win" target="_blank">Модальное окно</a></li>
+                                <li><a href="./cards/index.html" target="_blank">Карточки</a></li>
+                                <li><a href="./drag&drop/index.html" target="_blank">Drag&Drop</a></li>
+                                <li><a href="./game/index.html" target="_blank">Браузерная игра</a></li>
+                                <li><a href="./mini_game/index.html" target="_blank">Браузерная мини игра</a></li>
+                                <li><a href="https://densidorov.github.io/resume-sda/" target="_blank">Резюме (карусель)</a></li>
+                            </ul>,
+                        </li>
+                        <li class="di"><a href="https://github.com/DenSidorov/react-github_api">TypeScript</a></li>
+                        <li><a href="">React</a>, <a href="https://github.com/DenSidorov/REST">Vue</a></li>
+                        <li><a href="https://github.com/DenSidorov/react-github_api">Tailwind, Redux Toolkit</a></li>
+                        <li>Docker, <a href="https://github.com/DenSidorov/HW-03-webpack-">Wedpack</a></li>
                         <li>MongoDB, SQLite</li>
                         <li>REST, SOAP</li>
                         <li>Linux, Windows</li>
@@ -80,10 +108,13 @@
                 <div class="content">
                     <p>Я начинающий веб-разработчик.
                         Постоянно развиваюсь и хочу, чтобы веб-разработка стала моей профессиональной деятельностью.
-                        В данный момент, я прохожу обучение на платформе Skillfactory на WEB-разработчика(fullstack), прошел дополнительно курсы по HTML и CSS в онлайн школе Result School, смотрю дополнительные обучающие материалы винтернете.
+                        В данный момент, я прохожу обучение на платформе Skillfactory на WEB-разработчика(fullstack),
+                        прошел дополнительно курсы по HTML и CSS в онлайн школе Result School, смотрю дополнительные
+                        обучающие материалы винтернете.
                         Изучаю английский. </br>
-                        Креативность, люблю инновации. Большой опыт продаж, сопровождения сделок, подготовки документов, заключения договоров, сопровождение клиента. Подготовка и реализация проектов.
-                        Опыт управления коллективом до 12 человек.
+                        Креативность, люблю инновации. Большой опыт продаж, сопровождения сделок, подготовки документов,
+                        заключения договоров, сопровождение клиента. Подготовка и реализация проектов.
+                        Опыт управления коллективом до 35 человек.
                     </p>
                 </div>
             </div>
@@ -99,7 +130,7 @@
                     <h4>Менеджер по привлечению корпоративных клиентов</h4>
                     <p> Привлечение компаний малого исреднего бизнеса</p>
                     <span>2016</span>
-                    <h4>Консультант</h4>
+                    <h4 class="di">Консультант</h4>
                     <p> Консультирование физических лиц по продукиам банка</p>
                     <span>2010-2015</span>
                     <h3>ООО «Санде»</h3>
@@ -131,7 +162,7 @@
                         • Работа с контролирующими органами
                         • Составление отчетности</p>
                     <span>2005-2006</span>
-                    <h4>Товаровед</h4>
+                    <h4 class="di">Товаровед</h4>
                     <p> • Приемка товара,
                         • документооборот,
                         • контроль остатков
@@ -143,4 +174,5 @@
         </div>
     </section>
 </body>
+
 </html>
